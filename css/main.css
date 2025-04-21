@@ -1,0 +1,161 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary: #2E7D32;
+  --primary-light: #4CAF50;
+  --primary-dark: #1B5E20;
+  --secondary: #81C784;
+  --accent: #00C853;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f8faf8;
+}
+
+.navbar {
+  background: var(--primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--secondary);
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: var(--accent);
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.title {
+  color: var(--primary);
+  font-weight: 700;
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+#services .card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#services img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+#services .card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.review-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.review-card img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+footer {
+  background: var(--primary-dark);
+  color: white;
+  padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 160px;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  #services .card {
+    margin-bottom: 1rem;
+  }
+}
+
+.price {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.social-links a {
+  color: var(--primary);
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}

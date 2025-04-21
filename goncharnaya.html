@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="icon" type="image/x-icon" href="clover.ico">
+    <title>Хостел Старт | м.Таганская</title>
+</head>
+<body class="bg-light">
+    <div class="container px-4 mx-auto">
+        <header class="mb-8">
+            <nav class="navbar navbar-expand-lg navbar-dark rounded-lg shadow-sm mb-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <img src="img/logostart.png" alt="Хостел Старт" class="h-12">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">Главная</a>
+                            <a class="nav-item nav-link" href="tushinskaya.html">м.Тушинская</a>
+                            <a class="nav-item nav-link" href="saratovskaya.html">м.Текстильщики</a>
+                            <a class="nav-item nav-link active" href="goncharnaya.html">м.Таганская</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero mb-12">
+                <div class="card overflow-hidden">
+                    <img src="img/tag1.png" alt="Хостел Старт Таганская" class="w-full h-96 object-cover">
+                </div>
+            </section>
+
+            <div id="booking_iframe" class="mb-12"></div>
+
+            <section id="rooms" class="mb-12">
+                <h2 class="title text-3xl mb-8">Номера</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card">
+                        <img src="img/rooms/tag2k.png" class="card-img-top rounded-t-lg" alt="2-х местный комфорт">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-xl font-semibold text-center mb-4">2-х местный комфорт</h5>
+                            <p class="price text-center mb-4">от 2200 ₽</p>
+                            <a href="#booking_iframe" class="btn btn-primary w-full">Забронировать</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/rooms/tag2k1.png" class="card-img-top rounded-t-lg" alt="2-х местный комфорт + 1">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-xl font-semibold text-center mb-4">2-х местный комфорт + 1</h5>
+                            <p class="price text-center mb-4">от 1700 ₽</p>
+                            <a href="#booking_iframe" class="btn btn-primary w-full">Забронировать</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/rooms/tag4d.png" class="card-img-top rounded-t-lg" alt="4-х местный с душем">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-xl font-semibold text-center mb-4">4-х местный с душем</h5>
+                            <p class="price text-center mb-4">от 1500 ₽</p>
+                            <a href="#booking_iframe" class="btn btn-primary w-full">Забронировать</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/rooms/tag4x.png" class="card-img-top rounded-t-lg" alt="4-х местный комфорт">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-xl font-semibold text-center mb-4">4-х местный комфорт</h5>
+                            <p class="price text-center mb-4">от 1300 ₽</p>
+                            <a href="#booking_iframe" class="btn btn-primary w-full">Забронировать</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/rooms/tag6k.png" class="card-img-top rounded-t-lg" alt="6-и местный комфорт">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-xl font-semibold text-center mb-4">6-и местный комфорт</h5>
+                            <p class="price text-center mb-4">от 1200 ₽</p>
+                            <a href="#booking_iframe" class="btn btn-primary w-full">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="mb-12">
+                <h2 class="title text-3xl mb-8">Сервис</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="card p-4">
+                        <img src="img/services/wifi.png" alt="WiFi" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Бесплатный Wi-Fi</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/tv.png" alt="TV" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Кабельное TV</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/games.png" alt="Games" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Настольные игры</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/shower.png" alt="Shower" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Душевая кабина</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/dryer.png" alt="Dryer" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Фен</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/iron.png" alt="Iron" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Утюг</h5>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="title text-3xl mb-8">Дополнительные услуги</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="card p-4">
+                        <img src="img/services/tickets.png" alt="Tickets" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Бронирование билетов</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/taxi.png" alt="Taxi" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Заказ трансфера</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/safe.png" alt="Safe" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Камера хранения</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/washer.png" alt="Washer" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Стиральная машина</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/delivery.png" alt="Delivery" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Заказ еды</h5>
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/services/breakfast.png" alt="Breakfast" class="mx-auto mb-4 w-16 h-16">
+                        <h5 class="text-center text-sm font-medium">Завтрак</h5>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="mb-12">
+                <h2 class="title text-3xl mb-8">Галерея</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <a data-fancybox="gallery" href="img/gallery/max/tag1.png" class="gallery-item">
+                        <img src="img/gallery/min/tag1min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag2.png" class="gallery-item">
+                        <img src="img/gallery/min/tag2min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag3.png" class="gallery-item">
+                        <img src="img/gallery/min/tag3min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag4.png" class="gallery-item">
+                        <img src="img/gallery/min/tag4min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag5.png" class="gallery-item">
+                        <img src="img/gallery/min/tag5min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-f
+
+ancybox="gallery" href="img/gallery/max/tag6.png" class="gallery-item">
+                        <img src="img/gallery/min/tag6min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag7.png" class="gallery-item">
+                        <img src="img/gallery/min/tag7min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag8.png" class="gallery-item">
+                        <img src="img/gallery/min/tag8min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag9.png" class="gallery-item">
+                        <img src="img/gallery/min/tag9min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag10.png" class="gallery-item">
+                        <img src="img/gallery/min/tag10min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag11.png" class="gallery-item">
+                        <img src="img/gallery/min/tag11min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                    <a data-fancybox="gallery" href="img/gallery/max/tag12.png" class="gallery-item">
+                        <img src="img/gallery/min/tag12min.png" alt="" class="w-full rounded-lg">
+                    </a>
+                </div>
+            </section>
+
+            <section id="reviews" class="mb-12">
+                <h2 class="title text-3xl mb-8">Отзывы</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="review-card">
+                        <div class="flex items-center mb-4">
+                            <img src="img/clients/tm2.jpg" alt="Василий" class="mr-4">
+                            <div>
+                                <h5 class="font-semibold">Василий</h5>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Побывал в этом хостеле наконец-то! Супер, номера новые, кровати классные, расположение в центре 🔥 а главное цены нормальные. Обязательно еще остановлюсь здесь😉</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="flex items-center mb-4">
+                            <img src="img/clients/td2.jpg" alt="Настя" class="mr-4">
+                            <div>
+                                <h5 class="font-semibold">Настя</h5>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Отличный хостел! Хорошее и качественное обслуживание, вежливые администраторы! Уборка ежедневная, удобное расположение, рекомендую 👍</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="mb-12">
+                <h2 class="title text-3xl mb-8">Контакты</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-semibold mb-4">Наш адрес</h3>
+                        <p class="mb-4">Москва, м.Таганская<br>Гончарная наб. 1с4А</p>
+                        <p class="mb-4">
+                            <strong>Телефон:</strong><br>
+                            <a href="tel:+79776850707" class="text-primary hover:text-primary-dark">+7 (977) 685-07-07</a>
+                        </p>
+                        <p class="mb-4">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:hostel-start@bk.ru" class="text-primary hover:text-primary-dark">hostel-start@bk.ru</a>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://vk.com/hostelstart" target="_blank" class="fa fa-vk"></a>
+                            <a href="https://t.me/+79013612100" target="_blank" class="fa fa-telegram"></a>
+                            <a href="https://wa.me/+79013612100" target="_blank" class="fa fa-whatsapp"></a>
+                        </div>
+                    </div>
+                    <div class="card p-0 overflow-hidden">
+                        <div style="position:relative;overflow:hidden;height:100%">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.649464%2C55.739589&mode=search&oid=76063470898&ol=biz&z=17.04" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-12 rounded-lg p-4 text-center">
+            <div class="container">
+                <a href="#booking_iframe" class="text-white no-underline hover:text-gray-200">
+                    Перейти к бронированию
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+    <script>
+        var BookingIframe = new BookingIframe({
+            html_id: 'booking_iframe',
+            type: "select",
+            uid: 'd469e99b-bef2-48e0-8ce4-02c08eb28b30',
+            lang: 'ru',
+            width: 'auto',
+            height: 'auto',
+            rooms: '',
+            IsMobile: '0',
+            scroll_to_rooms: '0'
+        })
+        BookingIframe.init()
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
