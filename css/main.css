@@ -18,20 +18,46 @@ body {
 .navbar {
   background: var(--primary);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.navbar-brand img {
+  height: 48px;
+  width: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
   transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: var(--secondary);
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-dark .navbar-nav .active > .nav-link {
-  color: var(--accent);
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white;
+  background: var(--primary-dark);
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.navbar-toggler {
+  display: none;
 }
 
 .card {
@@ -131,7 +157,27 @@ footer {
 
 @media (max-width: 768px) {
   .navbar-brand img {
-    width: 160px;
+    height: 40px;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .navbar-toggler {
+    display: block;
+  }
+  
+  .navbar-collapse {
+    display: none !important;
+  }
+  
+  .navbar-collapse.show {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
   }
   
   .card {
