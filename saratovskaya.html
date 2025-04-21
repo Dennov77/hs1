@@ -13,28 +13,31 @@
     <title>Хостел Старт | м.Текстильщики</title>
 </head>
 <body class="bg-light">
-    <div class="container px-4 mx-auto">
-        <header class="mb-8">
-            <nav class="navbar navbar-expand-lg navbar-dark rounded-lg shadow-sm mb-4">
-                <div class="container-fluid">
+    <header class="fixed w-full z-50">
+        <nav class="navbar">
+            <div class="container px-4 mx-auto">
+                <div class="flex items-center justify-between">
                     <a class="navbar-brand" href="/">
-                        <img src="/img/logostart.png" alt="Хостел Старт" class="h-12">
+                        <img src="/clover.ico" alt="Логотип" class="w-8 h-8">
+                        <span class="text-primary font-bold text-xl">Старт</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <button class="navbar-toggler" type="button" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-collapse">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="/">Главная</a>
-                            <a class="nav-item nav-link" href="/tushinskaya.html">м.Тушинская</a>
-                            <a class="nav-item nav-link active" href="/saratovskaya.html">м.Текстильщики</a>
-                            <a class="nav-item nav-link" href="/goncharnaya.html">м.Таганская</a>
+                            <a class="nav-link" href="/">Главная</a>
+                            <a class="nav-link" href="/tushinskaya.html">м.Тушинская</a>
+                            <a class="nav-link active" href="/saratovskaya.html">м.Текстильщики</a>
+                            <a class="nav-link" href="/goncharnaya.html">м.Таганская</a>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
+    <div class="container px-4 mx-auto mt-20">
         <main>
             <section class="hero mb-12">
                 <div class="card overflow-hidden">
@@ -139,6 +142,7 @@
                     <a data-fancybox="gallery" href="/img/gallery/max/sargal3.png" class="gallery-item">
                         <img src="/img/gallery/min/sargal3mini.png" alt="" class="w-full rounded-lg">
                     </a>
+                    
                     <a data-fancybox="gallery" href="/img/gallery/max/sargal4.png" class="gallery-item">
                         <img src="/img/gallery/min/sargal4mini.png" alt="" class="w-full rounded-lg">
                     </a>
@@ -233,6 +237,7 @@
         </footer>
     </div>
 
+    <script src="/js/main.js"></script>
     <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
     <script>
         var BookingIframe = new BookingIframe({
