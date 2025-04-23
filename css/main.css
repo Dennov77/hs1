@@ -247,3 +247,22 @@ footer {
         background-color: #FAB619;
         border: 1px solid #FAB619;
     }
+
+    .navbar1 {
+      background: var(--primary);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .navbar1-dark .navbar1-nav .nav-link {
+      color: white;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar1-dark .navbar1-nav .nav-link:hover {
+      color: var(--secondary);
+    }
+    
+    .navbar1-dark .navbar1-nav .active > .nav-link {
+      color: var(--accent);
+    }
