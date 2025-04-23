@@ -57,7 +57,7 @@ body {
 }
 
 .a:hover {
-  text-decoration: none; /* Убираем подчеркивание */
+  text-decoration: none;
   color: var(--primary);
  }
 
