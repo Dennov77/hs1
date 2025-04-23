@@ -18,6 +18,28 @@ body {
   padding-top: 0;
 }
 
+.flat:is(button, .button, .btn, [type="button"], [type="reset"], [type="submit"]) {
+  --button-box-shadow: none;
+  --button-box-shadow-width: 0;
+  --with-shadow-box-shadow-width: 0;
+  --button-hover-border-width: 2px;
+  --button-border-width: 0;
+  --button-active-border-width: 0;
+  --button-color: var(--link-color);
+
+  transition-duration: calc(1s * 0.1);
+
+  transition-duration: var(--timing-2xfast);
+  transition-property: color, background, -webkit-text-decoration;
+  transition-property: color, text-decoration, background;
+  transition-property: color, text-decoration, background, -webkit-text-decoration;
+  transition-timing-function: ease-in;
+}
+
+.flat.with-border:is(button, .button, .btn, [type="button"], [type="reset"], [type="submit"]):active {
+  --button-active-border-width: var(--border-width);
+}
+
 .navbar {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -64,6 +86,7 @@ body {
   text-decoration: none;
   color: var(--primary);
  }
+
 
  .nav-link:hover {
   text-decoration: none;
