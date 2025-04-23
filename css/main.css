@@ -56,7 +56,16 @@ body {
   padding: 0.5rem;
 }
 
-.nav-link:hover {
+.block {
+  text-decoration: none;
+}
+
+.block:hover {
+  text-decoration: none;
+  color: var(--primary);
+ }
+
+ .nav-link:hover {
   text-decoration: none;
   color: var(--primary);
  }
