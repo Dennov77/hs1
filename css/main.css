@@ -8,7 +8,6 @@
   --primary-dark: #1B5E20;
   --secondary: #81C784;
   --accent: #00C853;
-
 }
 
 body {
@@ -18,26 +17,55 @@ body {
   padding-top: 0;
 }
 
-.flat:is(button, .button, .btn, [type="button"], [type="reset"], [type="submit"]) {
-  --button-box-shadow: none;
-  --button-box-shadow-width: 0;
-  --with-shadow-box-shadow-width: 0;
-  --button-hover-border-width: 2px;
-  --button-border-width: 0;
-  --button-active-border-width: 0;
-  --button-color: var(--link-color);
-
-  transition-duration: calc(1s * 0.1);
-
-  transition-duration: var(--timing-2xfast);
-  transition-property: color, background, -webkit-text-decoration;
-  transition-property: color, text-decoration, background;
-  transition-property: color, text-decoration, background, -webkit-text-decoration;
-  transition-timing-function: ease-in;
+.hero-section {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
 }
 
-.flat.with-border:is(button, .button, .btn, [type="button"], [type="reset"], [type="submit"]):active {
-  --button-active-border-width: var(--border-width);
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.hero-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
 }
 
 .navbar {
@@ -49,8 +77,10 @@ body {
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  padding: 0.75rem 0;
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .nav-logo {
@@ -75,7 +105,8 @@ body {
   align-items: center;
   text-align: center;
   font-size: 0.75rem;
-  padding: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
 }
 
 .block {
@@ -85,13 +116,13 @@ body {
 .block:hover {
   text-decoration: none;
   color: var(--primary);
- }
+}
 
-
- .nav-link:hover {
+.nav-link:hover {
   text-decoration: none;
   color: var(--primary);
- }
+  background: rgba(46, 125, 50, 0.1);
+}
 
 .nav-link i {
   font-size: 1.5rem;
@@ -100,6 +131,7 @@ body {
 
 .nav-link.active {
   color: var(--primary);
+  background: rgba(46, 125, 50, 0.1);
 }
 
 .mobile-menu-btn {
@@ -228,4 +260,3 @@ footer {
 .social-links a:hover {
   color: var(--accent);
 }
-

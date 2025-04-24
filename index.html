@@ -38,17 +38,20 @@
         </div>
     </nav>
 
-    <div class="container px-4 mx-auto">
-        <header class="mb-8">
-            <div class="text-center mb-12">
-                <img src="/img/logostart.png" alt="Хостел Старт" class="nav-logo">
+    <div class="container-fluid px-0">
+        <section class="hero-section">
+            <div class="hero-content">
+                <img src="/img/logostart.png" alt="Хостел Старт" class="nav-logo mb-4">
+                <h1 class="hero-title">Комфортное проживание в Москве</h1>
+                <p class="hero-subtitle">Современные хостелы в разных районах города по доступным ценам</p>
+                <a href="#locations" class="hero-button">Выбрать хостел</a>
             </div>
-        </header>
+        </section>
+    </div>
 
-       
-
+    <div class="container px-4 mx-auto">
         <main>
-            <section class="mb-12">
+            <section id="locations" class="mb-12">
                 <h2 class="title text-3xl mb-8">Выберете хостел</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     <div class="card hover:shadow-lg transition-all">
@@ -130,27 +133,26 @@
     
     <script>
         function setActiveNavLink() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-link');
-    console.log(currentPath);
- 
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      console.log(href)
-      if (currentPath === href) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-  
-  // Initialize
-  document.addEventListener('DOMContentLoaded', () => {
-    // Set initial active link
-    setActiveNavLink();
-  });
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.nav-link');
+            console.log(currentPath);
+         
+            navLinks.forEach(link => {
+              const href = link.getAttribute('href');
+              console.log(href)
+              if (currentPath === href) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+        }
+          
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial active link
+            setActiveNavLink();
+        });
     </script>
-
 </body>
 </html>
