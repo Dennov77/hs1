@@ -409,13 +409,13 @@ footer::before {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .social-links1 a:hover {
+  
   opacity: 1;
   transform: translateY(-3px);
+  text-decoration: none;
   /* background: var(--secondary); */
 }
 
@@ -479,4 +479,5 @@ footer::before {
 
 .social-links a:hover {
   color: var(--accent);
+  text-decoration: none;
 }
