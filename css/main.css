@@ -22,9 +22,9 @@ body {
 
 .hero-section {
   position: relative;
-  height: 80vh;
+  height: 95vh;
   min-height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/hero-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.5)), url('/img/gallery/max/tag3.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -125,6 +125,19 @@ body {
   justify-content: center;
   margin-bottom: 0.25rem;
   color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.nav-link .metro-icon2 {
+  width: 24px;
+  height: 24px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
   font-weight: bold;
   font-size: 14px;
 }
@@ -299,103 +312,10 @@ body {
 }
 
 footer {
-  background: linear-gradient(to right, var(--primary-dark), var(--primary));
+  background: var(--primary-dark);
   color: white;
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-bottom: 80px;
-  border-radius: 20px;
-  margin: 0 1rem 80px 1rem;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.footer-section {
-  text-align: center;
-}
-
-.footer-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-}
-
-.footer-title:after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 3px;
-  background: var(--accent);
-  border-radius: 2px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-links a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.footer-links a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.footer-social a {
-  color: white;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  opacity: 0.8;
-}
-
-.footer-social a:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-bottom a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-bottom a:hover {
-  color: var(--accent);
 }
 
 @media (max-width: 768px) {
