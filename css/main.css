@@ -393,13 +393,13 @@ footer::before {
   transform: translateX(5px);
 }
 
-.social-links {
+.social-links1 {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.social-links a {
+.social-links1 a {
   color: white;
   font-size: 1.5rem;
   transition: all 0.3s ease;
@@ -413,10 +413,10 @@ footer::before {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social-links a:hover {
+.social-links1 a:hover {
   opacity: 1;
   transform: translateY(-3px);
-  background: var(--secondary);
+  /* background: var(--secondary); */
 }
 
 .footer-bottom {
