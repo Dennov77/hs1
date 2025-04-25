@@ -119,81 +119,111 @@
             </section>
         </main>
 
-        <footer class="bg-gradient-to-r from-primary-dark to-primary rounded-3xl shadow-2xl overflow-hidden relative mt-20 mb-24">
-          <div class="container mx-auto px-6 py-12">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  <div class="space-y-6">
-                      <img src="/img/logostart.png" alt="Хостел Старт" class="h-12 brightness-0 invert">
-                      <p class="text-gray-200 text-sm leading-relaxed">
-                          Сеть современных хостелов в Москве. Комфортное проживание по доступным ценам в разных районах города.
-                      </p>
-                      <div class="flex space-x-4">
-                          <a href="https://vk.com/hostelstart" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300">
-                              <i class="fa fa-vk text-white"></i>
-                          </a>
-                          <a href="https://t.me/+79013612100" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300">
-                              <i class="fa fa-telegram text-white"></i>
-                          </a>
-                          <a href="https://wa.me/+79013612100" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300">
-                              <i class="fa fa-whatsapp text-white"></i>
-                          </a>
+        <footer class="relative mt-24 mb-24">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary-dark rounded-[40px] shadow-xl overflow-hidden">
+              <div class="absolute inset-0 bg-[url('/img/pattern.png')] opacity-5"></div>
+          </div>
+          
+          <div class="relative px-6 pt-16 pb-12 text-white">
+              <div class="max-w-7xl mx-auto">
+                  <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+                      <div class="md:col-span-4">
+                          <img src="/img/logostart.png" alt="Хостел Старт" class="h-12 mb-6 brightness-0 invert">
+                          <p class="text-gray-200 mb-8 leading-relaxed">
+                              Комфортное проживание в современных хостелах Москвы. Удобное расположение, доступные цены, высокий уровень сервиса.
+                          </p>
+                          <div class="flex items-center gap-4">
+                              <a href="https://vk.com/hostelstart" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all">
+                                  <i class="fa fa-vk text-white"></i>
+                              </a>
+                              <a href="https://t.me/+79013612100" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all">
+                                  <i class="fa fa-telegram text-white"></i>
+                              </a>
+                              <a href="https://wa.me/+79013612100" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all">
+                                  <i class="fa fa-whatsapp text-white"></i>
+                              </a>
+                          </div>
+                      </div>
+                      
+                      <div class="md:col-span-2">
+                          <h3 class="text-lg font-semibold mb-6">Хостелы</h3>
+                          <ul class="space-y-4">
+                              <li>
+                                  <a href="/tushinskaya.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                      <i class="fa fa-map-marker text-secondary"></i>
+                                      Тушинская
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="/goncharnaya.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                      <i class="fa fa-map-marker text-secondary"></i>
+                                      Таганская
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="/saratovskaya.html" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                      <i class="fa fa-map-marker text-secondary"></i>
+                                      Текстильщики
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                      <div class="md:col-span-3">
+                          <h3 class="text-lg font-semibold mb-6">Услуги</h3>
+                          <div class="grid grid-cols-2 gap-4">
+                              <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                  <i class="fa fa-wifi text-secondary"></i>
+                                  Wi-Fi
+                              </a>
+                              <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                  <i class="fa fa-tv text-secondary"></i>
+                                  TV
+                              </a>
+                              <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                  <i class="fa fa-shower text-secondary"></i>
+                                  Душ
+                              </a>
+                              <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                                  <i class="fa fa-coffee text-secondary"></i>
+                                  Кухня
+                              </a>
+                          </div>
+                      </div>
+                      
+                      <div class="md:col-span-3">
+                          <h3 class="text-lg font-semibold mb-6">Контакты</h3>
+                          <ul class="space-y-4">
+                              <li>
+                                  <a href="tel:+79776850707" class="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
+                                      <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                          <i class="fa fa-phone text-secondary"></i>
+                                      </div>
+                                      <span>+7 (977) 685-07-07</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="mailto:hostel-start@bk.ru" class="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
+                                      <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                          <i class="fa fa-envelope text-secondary"></i>
+                                      </div>
+                                      <span>hostel-start@bk.ru</span>
+                                  </a>
+                              </li>
+                          </ul>
                       </div>
                   </div>
                   
-                  <div>
-                      <h3 class="text-white font-semibold text-lg mb-6">Хостелы</h3>
-                      <ul class="space-y-4">
-                          <li>
-                              <a href="/tushinskaya.html" class="text-gray-300 hover:text-white flex items-center gap-2 transition-all duration-300">
-                                  <i class="fa fa-map-marker"></i>
-                                  <span>Тушинская</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/goncharnaya.html" class="text-gray-300 hover:text-white flex items-center gap-2 transition-all duration-300">
-                                  <i class="fa fa-map-marker"></i>
-                                  <span>Таганская</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/saratovskaya.html" class="text-gray-300 hover:text-white flex items-center gap-2 transition-all duration-300">
-                                  <i class="fa fa-map-marker"></i>
-                                  <span>Текстильщики</span>
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-                  
-              
-                  
-                  <div>
-                      <h3 class="text-white font-semibold text-lg mb-6">Контакты</h3>
-                      <ul class="space-y-4">
-                          <li>
-                              <a href="tel:+79776850707" class="text-gray-300 hover:text-white flex items-center gap-2 transition-all duration-300">
-                                  <i class="fa fa-phone"></i>
-                                  <span>+7 (977) 685-07-07</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="mailto:hostel-start@bk.ru" class="text-gray-300 hover:text-white flex items-center gap-2 transition-all duration-300">
-                                  <i class="fa fa-envelope"></i>
-                                  <span>hostel-start@bk.ru</span>
-                              </a>
-                          </li>
-                      </ul>
+                  <div class="border-t border-white/10 pt-8">
+                      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                          <p class="text-gray-400 text-sm">© 2024 Хостел Старт. Все права защищены.</p>
+                          <div class="flex items-center gap-6">
+                              <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Правила проживания</a>
+                              <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Политика конфиденциальности</a>
+                          </div>
+                      </div>
                   </div>
               </div>
-              
-              <div class="mt-12 pt-8 border-t border-white/10">
-                  <div class="text-center text-gray-400 text-sm">
-                      © 2024 Хостел Старт. Все права защищены.
-                  </div>
-              </div>
-          </div>
-          
-          <div class="absolute top-0 right-0 w-1/3 h-full opacity-10">
-              <div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--secondary)_0%,_transparent_50%)]"></div>
           </div>
       </footer>
     </div>
