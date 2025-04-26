@@ -5,11 +5,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.35",
-    "autoprefixer": "^10.4.17",
     "@fancyapps/ui": "^5.0.33",
-    "jquery": "^3.7.1"
+    "@tailwindcss/postcss": "^4.1.4",
+    "jquery": "^3.7.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
     "vite": "^5.0.12"
