@@ -7,7 +7,9 @@
   "dependencies": {
     "tailwindcss": "^3.4.1",
     "postcss": "^8.4.35",
-    "autoprefixer": "^10.4.17"
+    "autoprefixer": "^10.4.17",
+    "@fancyapps/ui": "^5.0.33",
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
     "vite": "^5.0.12"

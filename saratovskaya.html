@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -143,41 +143,40 @@
             <section id="gallery" class="mb-12">
                 <h2 class="title text-3xl mb-8">Галерея</h2>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal1.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal1.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal1mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal2.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal2.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal2mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal3.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal3.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal3mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal4.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal4.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal4mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal5.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal5.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal5mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal6.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal6.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal6mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal7.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal7.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal7mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal8.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal8.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal8mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal9.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal9.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal9mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal10.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal10.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal10mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal11.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal11.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal11mini.png" alt="" class="w-full rounded-lg">
                     </a>
-                    <a data-fancybox="gallery" href="/img/gallery/max/sargal12.png" class="gallery-item">
+                    <a href="/img/gallery/max/sargal12.png" data-fancybox="gallery" class="gallery-item">
                         <img src="/img/gallery/min/sargal12mini.png" alt="" class="w-full rounded-lg">
                     </a>
                 </div>
@@ -262,32 +261,34 @@
         BookingIframe.init()
     </script>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+
         function setActiveNavLink() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-link');
-    console.log(currentPath);
- 
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      console.log(href)
-      if (currentPath === href) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-  
-  // Initialize
-  document.addEventListener('DOMContentLoaded', () => {
-    // Set initial active link
-    setActiveNavLink();
-  });
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.nav-link');
+            console.log(currentPath);
+         
+            navLinks.forEach(link => {
+              const href = link.getAttribute('href');
+              console.log(href)
+              if (currentPath === href) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+        }
+          
+        document.addEventListener('DOMContentLoaded', () => {
+            setActiveNavLink();
+        });
     </script>
 </body>
 </html>
