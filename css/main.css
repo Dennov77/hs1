@@ -206,6 +206,7 @@ body {
 
 .block {
   text-decoration: none;
+  color:rgba(0, 0, 0, 0.623)
 }
 
 .block:hover {
