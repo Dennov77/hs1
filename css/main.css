@@ -19,14 +19,6 @@
   --color-gray-900: #111827;
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -55,7 +47,7 @@ body {
   padding-top: 0;
 }
 
-.hero-section {
+.hero-section1 {
   position: relative;
   height: 95vh;
   min-height: 500px;
@@ -70,9 +62,67 @@ body {
   margin-bottom: 4rem;
 }
 
-.hero-content {
+.hero-content1 {
   max-width: 800px;
   padding: 1rem;
+}
+
+.hero-title1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle1 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  padding: 0 1rem;
+}
+
+.hero-button1 {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.hero-button:hover1 {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-title {
@@ -83,10 +133,11 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.25rem);
   margin-bottom: 2rem;
   font-weight: 300;
   padding: 0 1rem;
+  line-height: 1.6;
 }
 
 .hero-button {
@@ -329,10 +380,8 @@ body {
 }
 
 .review-card img {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
+  width: 48px;
+  height: 48px;
 }
 
 @media (max-width: 480px) {
@@ -448,11 +497,9 @@ footer::before {
 }
 
 .social-links1 a:hover {
-  
   opacity: 1;
   transform: translateY(-3px);
   text-decoration: none;
-  /* background: var(--secondary); */
 }
 
 .footer-bottom {
