@@ -62,6 +62,20 @@ body {
   margin-bottom: 4rem;
 }
 
+.hero-section11 {
+  position: relative;
+  height: 95vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
 .hero-content1 {
   max-width: 800px;
   padding: 1rem;
